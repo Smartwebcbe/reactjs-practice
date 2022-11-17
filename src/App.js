@@ -13,15 +13,15 @@ import { User } from './pages/user/user'
 
 function App() {
   return (
-    <div>
+    <div class="container">
       <BrowserRouter>
       <nav>
-        <Link to="/home">Home</Link> {" | "}
+        <Link to="">Home</Link> {" | "}
         <Link to="/user">User</Link> {" | "}
         <Link to="/profile">Profile</Link>
       </nav>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="/user" element={<User />} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>

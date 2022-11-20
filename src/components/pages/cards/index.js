@@ -6,10 +6,10 @@ export class Cards extends React.Component {
         return (
             <div>
                 <div class="card">
-                    <img src="https://cdn4.buysellads.net/uu/1/127574/1668535585-SST41.jpg" class="card-img-top" alt="..." />
+                    <img src={this.props.data.img} class="card-img-top" alt="..." />
                     <div class="card-body">
-                        <h5 class="card-title">{this.props.title}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">{this.props.data.title}</h5>
+                        <p class="card-text">{this.props.data.desc}</p>
                         <a href="#" class="btn btn-primary" onClick={this.props.clickcount}>Click Here</a>
                     </div>
                 </div>
